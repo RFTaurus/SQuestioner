@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 4.7.4
+- https://www.phpmyadmin.net
+-
+- Host: 127.0.0.1
+- Generation Time: Nov 19, 2017 at 05:08 PM
+- Server version: 10.1.28-MariaDB
+- PHP Version: 7.1.10
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="latihan_db" collation="latin1_swedish_ci" charset="latin1">
+            <pma:table name="kuesioner">
+                CREATE TABLE `kuesioner` (
+                  `user_id` int(255) NOT NULL AUTO_INCREMENT,
+                  `nama` text NOT NULL,
+                  `highschool` text NOT NULL,
+                  `email` varchar(52) NOT NULL,
+                  `opinion` text NOT NULL,
+                  PRIMARY KEY (`user_id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+            </pma:table>
+            <pma:table name="user">
+                CREATE TABLE `user` (
+                  `user_id` int(255) NOT NULL AUTO_INCREMENT,
+                  `nama` text NOT NULL,
+                  `email` varchar(100) NOT NULL,
+                  `username` varchar(52) NOT NULL,
+                  `password_user` varchar(32) NOT NULL,
+                  PRIMARY KEY (`user_id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Database: 'latihan_db'
+    -->
+    <database name="latihan_db">
+        <!-- Table kuesioner -->
+        <table name="kuesioner">
+            <column name="user_id">1</column>
+            <column name="nama">agriweb</column>
+            <column name="highschool">ipb</column>
+            <column name="email">agriweb@gmail.com</column>
+            <column name="opinion">menarik dan seru</column>
+        </table>
+        <!-- Table user -->
+        <table name="user">
+            <column name="user_id">1</column>
+            <column name="nama">Rakish</column>
+            <column name="email">rakish_fanquer</column>
+            <column name="username">rakishfrisky@gmail.com</column>
+            <column name="password_user">123456</column>
+        </table>
+        <table name="user">
+            <column name="user_id">2</column>
+            <column name="nama">rev</column>
+            <column name="email">revo</column>
+            <column name="username">rev@gmail.com</column>
+            <column name="password_user">123456</column>
+        </table>
+        <table name="user">
+            <column name="user_id">3</column>
+            <column name="nama">Character Style</column>
+            <column name="email">rakish123</column>
+            <column name="username"></column>
+            <column name="password_user">123456</column>
+        </table>
+        <table name="user">
+            <column name="user_id">4</column>
+            <column name="nama">agriweb</column>
+            <column name="email">agriweb@gmail.com</column>
+            <column name="username">agriweb</column>
+            <column name="password_user">agriweb</column>
+        </table>
+    </database>
+</pma_xml_export>
